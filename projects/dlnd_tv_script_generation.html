@@ -9152,15 +9152,15 @@ label {
 }
 /* Flexible box model classes */
 /* Taken from Alex Russell http://infrequently.org/2009/08/css-3-progress/ */
-/* This file is a compatability layer.  It allows the usage of flexible box 
+/* This file is a compatability layer.  It allows the usage of flexible box
 model layouts accross multiple browsers, including older browsers.  The newest,
 universal implementation of the flexible box model is used when available (see
-`Modern browsers` comments below).  Browsers that are known to implement this 
+`Modern browsers` comments below).  Browsers that are known to implement this
 new spec completely include:
 
     Firefox 28.0+
     Chrome 29.0+
-    Internet Explorer 11+ 
+    Internet Explorer 11+
     Opera 17.0+
 
 Browsers not listed, including Safari, are supported via the styling under the
@@ -12542,7 +12542,7 @@ div#pager .ui-resizable-handle {
   background: #f7f7f7;
   border-top: 1px solid #cfcfcf;
   border-bottom: 1px solid #cfcfcf;
-  /* This injects handle bars (a short, wide = symbol) for 
+  /* This injects handle bars (a short, wide = symbol) for
         the resize handle. */
 }
 div#pager .ui-resizable-handle::after {
@@ -13041,7 +13041,7 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
+
 /* Temporary definitions which will become obsolete with Notebook release 5.0 */
 .ansi-black-fg { color: #3E424D; }
 .ansi-black-bg { background-color: #3E424D; }
@@ -13080,7 +13080,7 @@ ul.typeahead-list  > li > a.pull-right {
 
     </style>
 <style type="text/css">
-    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when 
+    body[data-notebook-name] > #header #header-container:not(.show-panel), /* body has data-notebook-name attribute when
 a notebook is open. this rule won't be applied when the notebook is not open (in 404 view for example) */
 body[data-notebook-name] #menubar-container #maintoolbar:not(.show-panel),
 body[data-notebook-name] #menubar-container ul.navbar-nav:not(.show-panel) {
@@ -13114,14 +13114,14 @@ div#notebook {
   div.cell {
     display: block;
     page-break-inside: avoid;
-  } 
-  div.output_wrapper { 
-    display: block;
-    page-break-inside: avoid; 
   }
-  div.output { 
+  div.output_wrapper {
     display: block;
-    page-break-inside: avoid; 
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
   }
 }
 </style>
@@ -13241,15 +13241,15 @@ Number of lines: 109233
 Average number of words in each line: 5.544240293684143
 
 The lines 0 to 10:
-jerry: do you know what this is all about? do you know, why were here? to be out, this is out...and out is one of the single most enjoyable experiences of life. people...did you ever hear people talking about we should go out? this is what theyre talking about...this whole thing, were all out now, no one is home. not one person here is home, were all out! there are people trying to find us, they dont know where we are. (on an imaginary phone) did you ring?, i cant find him. where did he go? he didnt tell me where he was going. he must have gone out. you wanna go out you get ready, you pick out the clothes, right? you take the shower, you get all ready, get the cash, get your friends, the car, the spot, the reservation...then youre standing around, what do you do? you go we gotta be getting back. once youre out, you wanna get back! you wanna go to sleep, you wanna get up, you wanna go out again tomorrow, right? where ever you are in life, its my feeling, youve gotta go. 
+jerry: do you know what this is all about? do you know, why were here? to be out, this is out...and out is one of the single most enjoyable experiences of life. people...did you ever hear people talking about we should go out? this is what theyre talking about...this whole thing, were all out now, no one is home. not one person here is home, were all out! there are people trying to find us, they dont know where we are. (on an imaginary phone) did you ring?, i cant find him. where did he go? he didnt tell me where he was going. he must have gone out. you wanna go out you get ready, you pick out the clothes, right? you take the shower, you get all ready, get the cash, get your friends, the car, the spot, the reservation...then youre standing around, what do you do? you go we gotta be getting back. once youre out, you wanna get back! you wanna go to sleep, you wanna get up, you wanna go out again tomorrow, right? where ever you are in life, its my feeling, youve gotta go.
 
-jerry: (pointing at georges shirt) see, to me, that button is in the worst possible spot. the second button literally makes or breaks the shirt, look at it. its too high! its in no-mans-land. you look like you live with your mother. 
+jerry: (pointing at georges shirt) see, to me, that button is in the worst possible spot. the second button literally makes or breaks the shirt, look at it. its too high! its in no-mans-land. you look like you live with your mother.
 
-george: are you through? 
+george: are you through?
 
-jerry: you do of course try on, when you buy? 
+jerry: you do of course try on, when you buy?
 
-george: yes, it was purple, i liked it, i dont actually recall considering the buttons. 
+george: yes, it was purple, i liked it, i dont actually recall considering the buttons.
 
 </pre>
 </div>
@@ -13293,10 +13293,10 @@ george: yes, it was purple, i liked it, i dont actually recall considering the b
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
     <span class="n">word_counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-    
+
     <span class="c1"># sorting the words from most to least frequent in text occurrence</span>
     <span class="n">sorted_vocab</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">word_counts</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="n">word_counts</span><span class="o">.</span><span class="n">get</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    
+
     <span class="c1"># create int_to_vocab dictionaries</span>
     <span class="n">int_to_vocab</span> <span class="o">=</span> <span class="p">{</span><span class="n">ii</span><span class="p">:</span> <span class="n">word</span> <span class="k">for</span> <span class="n">ii</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">sorted_vocab</span><span class="p">)}</span>
     <span class="n">vocab_to_int</span> <span class="o">=</span> <span class="p">{</span><span class="n">word</span><span class="p">:</span> <span class="n">ii</span> <span class="k">for</span> <span class="n">ii</span><span class="p">,</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">int_to_vocab</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
@@ -13367,7 +13367,7 @@ george: yes, it was purple, i liked it, i dont actually recall considering the b
 <span class="sd">    :return: Tokenized dictionary where the key is the punctuation and the value is the token</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-        
+
     <span class="n">lookup</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;.&#39;</span><span class="p">:</span> <span class="s1">&#39;||Period||&#39;</span><span class="p">,</span>
               <span class="s1">&#39;,&#39;</span><span class="p">:</span> <span class="s1">&#39;||Comma||&#39;</span><span class="p">,</span>
               <span class="s1">&#39;&quot;&#39;</span><span class="p">:</span> <span class="s1">&#39;||Qutotation_Mark||&#39;</span><span class="p">,</span>
@@ -13378,7 +13378,7 @@ george: yes, it was purple, i liked it, i dont actually recall considering the b
               <span class="s1">&#39;)&#39;</span><span class="p">:</span> <span class="s1">&#39;||Right_Parentheses||&#39;</span><span class="p">,</span>
               <span class="s1">&#39;-&#39;</span><span class="p">:</span> <span class="s1">&#39;||Dash||&#39;</span><span class="p">,</span>
               <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">:</span> <span class="s1">&#39;||Return||&#39;</span><span class="p">}</span>
-        
+
     <span class="k">return</span> <span class="n">lookup</span>
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -13498,7 +13498,7 @@ george: yes, it was purple, i liked it, i dont actually recall considering the b
 <p>You can create data with TensorDataset by passing in feature and target tensors. Then create a DataLoader as usual.</p>
 
 <pre><code>data = TensorDataset(feature_tensors, target_tensors)
-data_loader = torch.utils.data.DataLoader(data, 
+data_loader = torch.utils.data.DataLoader(data,
                                           batch_size=batch_size)</code></pre>
 <h3 id="Batching">Batching<a class="anchor-link" href="#Batching">&#182;</a></h3><p>Implement the <code>batch_data</code> function to batch <code>words</code> data into chunks of size <code>batch_size</code> using the <code>TensorDataset</code> and <code>DataLoader</code> classes.</p>
 <blockquote><p>You can batch words using the DataLoader, but it will be up to you to create <code>feature_tensors</code> and <code>target_tensors</code> of the correct size and content for a given <code>sequence_length</code>.</p>
@@ -13549,14 +13549,14 @@ sequence_length = 4</code></pre>
 <span class="c1">#         print(&quot;feature: &quot;,x_batch)</span>
         <span class="n">batch_y</span> <span class="o">=</span>  <span class="n">words</span><span class="p">[</span><span class="n">idx_end</span><span class="p">]</span>
 <span class="c1">#         print(&quot;target: &quot;, batch_y)    </span>
-        <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">batch_y</span><span class="p">)</span>    
+        <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">batch_y</span><span class="p">)</span>
 
     <span class="c1"># create Tensor datasets</span>
     <span class="n">data</span> <span class="o">=</span> <span class="n">TensorDataset</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="n">torch</span><span class="o">.</span><span class="n">from_numpy</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
     <span class="c1"># make sure the SHUFFLE your training data</span>
     <span class="n">data_loader</span> <span class="o">=</span> <span class="n">DataLoader</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">)</span>
     <span class="c1"># return a dataloader</span>
-    <span class="k">return</span> <span class="n">data_loader</span>    
+    <span class="k">return</span> <span class="n">data_loader</span>
 
 <span class="c1"># there is no test for this function, but you are encouraged to create</span>
 <span class="c1"># print statements and tests of your own</span>
@@ -13683,7 +13683,7 @@ out = output[:, -1]</code></pre>
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
 
 <span class="k">class</span> <span class="nc">RNN</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
-    
+
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">,</span> <span class="n">n_layers</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.5</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Initialize the PyTorch RNN Module</span>
@@ -13699,17 +13699,17 @@ out = output[:, -1]</code></pre>
         <span class="bp">self</span><span class="o">.</span><span class="n">hidden_dim</span> <span class="o">=</span> <span class="n">hidden_dim</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">output_size</span> <span class="o">=</span> <span class="n">output_size</span>
         <span class="c1"># set class variables</span>
-        
+
         <span class="c1"># define model layers</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">embedding</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Embedding</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">)</span>
-        
+
         <span class="bp">self</span><span class="o">.</span><span class="n">lstm</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">LSTM</span><span class="p">(</span><span class="n">embedding_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">,</span> <span class="n">n_layers</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="n">dropout</span><span class="p">,</span> <span class="n">batch_first</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        
+
         <span class="bp">self</span><span class="o">.</span><span class="n">dropout</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Dropout</span><span class="p">(</span><span class="n">dropout</span><span class="p">)</span>
-        
+
         <span class="bp">self</span><span class="o">.</span><span class="n">fc</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="n">hidden_dim</span><span class="p">,</span> <span class="n">output_size</span><span class="p">)</span>
-    
-    
+
+
     <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nn_input</span><span class="p">,</span> <span class="n">hidden</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Forward propagation of the neural network</span>
@@ -13724,14 +13724,14 @@ out = output[:, -1]</code></pre>
         <span class="n">lstm_out</span> <span class="o">=</span> <span class="n">lstm_out</span><span class="o">.</span><span class="n">contiguous</span><span class="p">()</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden_dim</span><span class="p">)</span>
         <span class="c1">#out = self.dropout(lstm_out)</span>
 
-        
+
         <span class="n">out</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fc</span><span class="p">(</span><span class="n">lstm_out</span><span class="p">)</span>
         <span class="n">out</span> <span class="o">=</span> <span class="n">out</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">output_size</span><span class="p">)</span>
         <span class="n">out</span> <span class="o">=</span> <span class="n">out</span><span class="p">[:,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
         <span class="c1"># return one batch of output word scores and the hidden state</span>
         <span class="k">return</span> <span class="n">out</span><span class="p">,</span> <span class="n">hidden</span>
-    
-    
+
+
     <span class="k">def</span> <span class="nf">init_hidden</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">):</span>
         <span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">        Initialize the hidden state of an LSTM/GRU</span>
@@ -13740,9 +13740,9 @@ out = output[:, -1]</code></pre>
 <span class="sd">        &#39;&#39;&#39;</span>
         <span class="c1"># Implement function</span>
         <span class="c1">#self.batch_size = batch_size</span>
-        
+
         <span class="n">weight</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">parameters</span><span class="p">())</span><span class="o">.</span><span class="n">data</span>
-        
+
         <span class="c1"># initialize hidden state with zero weights, and move to GPU if available</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">train_on_gpu</span><span class="p">):</span>
             <span class="n">hidden</span> <span class="o">=</span> <span class="p">(</span><span class="n">weight</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n_layers</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden_dim</span><span class="p">)</span><span class="o">.</span><span class="n">zero_</span><span class="p">()</span><span class="o">.</span><span class="n">cuda</span><span class="p">(),</span>
@@ -13809,29 +13809,29 @@ out = output[:, -1]</code></pre>
 <span class="sd">    :param target: The target output for the batch of input</span>
 <span class="sd">    :return: The loss and the latest hidden state Tensor</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    
+
     <span class="c1"># TODO: Implement Function</span>
-    
+
     <span class="c1"># move data to GPU, if available</span>
     <span class="k">if</span><span class="p">(</span><span class="n">train_on_gpu</span><span class="p">):</span>
         <span class="n">inp</span><span class="p">,</span> <span class="n">target</span> <span class="o">=</span> <span class="n">inp</span><span class="o">.</span><span class="n">cuda</span><span class="p">(),</span> <span class="n">target</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
         <span class="n">rnn</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
     <span class="c1"># perform backpropagation and optimization</span>
     <span class="n">h</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="n">each</span><span class="o">.</span><span class="n">data</span> <span class="k">for</span> <span class="n">each</span> <span class="ow">in</span> <span class="n">hidden</span><span class="p">])</span>
-    
+
     <span class="c1">#zero accumulation gradient</span>
     <span class="n">rnn</span><span class="o">.</span><span class="n">zero_grad</span><span class="p">()</span>
-    
+
     <span class="c1">#get the output from the model</span>
     <span class="n">output</span><span class="p">,</span> <span class="n">h</span> <span class="o">=</span> <span class="n">rnn</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">h</span><span class="p">)</span>
-    
+
     <span class="c1">#calculate the loss and perform backprop</span>
     <span class="n">loss</span> <span class="o">=</span> <span class="n">criterion</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
     <span class="n">loss</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
-    
+
     <span class="n">nn</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">clip_grad_norm_</span><span class="p">(</span><span class="n">rnn</span><span class="o">.</span><span class="n">parameters</span><span class="p">(),</span> <span class="mi">5</span><span class="p">)</span>
     <span class="n">optimizer</span><span class="o">.</span><span class="n">step</span><span class="p">()</span>
-    
+
     <span class="c1"># return the loss over a batch and the hidden state produced by our model</span>
     <span class="k">return</span> <span class="n">loss</span><span class="o">.</span><span class="n">item</span><span class="p">(),</span> <span class="n">h</span>
 
@@ -13886,24 +13886,24 @@ out = output[:, -1]</code></pre>
 
 <span class="k">def</span> <span class="nf">train_rnn</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">n_epochs</span><span class="p">,</span> <span class="n">show_every_n_batches</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">batch_losses</span> <span class="o">=</span> <span class="p">[]</span>
-    
+
     <span class="n">rnn</span><span class="o">.</span><span class="n">train</span><span class="p">()</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Training for </span><span class="si">%d</span><span class="s2"> epoch(s)...&quot;</span> <span class="o">%</span> <span class="n">n_epochs</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">epoch_i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n_epochs</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-        
+
         <span class="c1"># initialize hidden state</span>
         <span class="n">hidden</span> <span class="o">=</span> <span class="n">rnn</span><span class="o">.</span><span class="n">init_hidden</span><span class="p">(</span><span class="n">batch_size</span><span class="p">)</span>
-        
+
         <span class="k">for</span> <span class="n">batch_i</span><span class="p">,</span> <span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">train_loader</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
-            
+
             <span class="c1"># make sure you iterate over completely full batches, only</span>
             <span class="n">n_batches</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">train_loader</span><span class="o">.</span><span class="n">dataset</span><span class="p">)</span><span class="o">//</span><span class="n">batch_size</span>
             <span class="k">if</span><span class="p">(</span><span class="n">batch_i</span> <span class="o">&gt;</span> <span class="n">n_batches</span><span class="p">):</span>
                 <span class="k">break</span>
-            
+
             <span class="c1"># forward, back prop</span>
-            <span class="n">loss</span><span class="p">,</span> <span class="n">hidden</span> <span class="o">=</span> <span class="n">forward_back_prop</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span>          
+            <span class="n">loss</span><span class="p">,</span> <span class="n">hidden</span> <span class="o">=</span> <span class="n">forward_back_prop</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">labels</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span>
             <span class="c1"># record loss</span>
             <span class="n">batch_losses</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">loss</span><span class="p">)</span>
 
@@ -13980,7 +13980,7 @@ out = output[:, -1]</code></pre>
 <span class="c1"># Output size</span>
 <span class="n">output_size</span> <span class="o">=</span> <span class="n">vocab_size</span>
 <span class="c1"># Embedding Dimension</span>
-<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">300</span> 
+<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">300</span>
 <span class="c1"># Hidden Dimension</span>
 <span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">500</span>
 <span class="c1"># Number of RNN Layers</span>
@@ -14415,7 +14415,7 @@ Model Trained and Saved
 <span class="c1"># Output size</span>
 <span class="n">output_size</span> <span class="o">=</span> <span class="n">vocab_size</span>
 <span class="c1"># Embedding Dimension</span>
-<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">128</span> 
+<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="c1"># Hidden Dimension</span>
 <span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># Number of RNN Layers</span>
@@ -14860,7 +14860,7 @@ Epoch:   10/10    Loss: 3.2702079963684083
 <span class="c1"># Output size</span>
 <span class="n">output_size</span> <span class="o">=</span> <span class="n">vocab_size</span>
 <span class="c1"># Embedding Dimension</span>
-<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">200</span> 
+<span class="n">embedding_dim</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="c1"># Hidden Dimension</span>
 <span class="n">hidden_dim</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># Number of RNN Layers</span>
@@ -15385,55 +15385,55 @@ Epoch:   10/10    Loss: 3.3163176655769346
 <span class="sd">    :return: The generated text</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">rnn</span><span class="o">.</span><span class="n">eval</span><span class="p">()</span>
-    
+
     <span class="c1"># create a sequence (batch_size=1) with the prime_id</span>
     <span class="n">current_seq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">full</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">sequence_length</span><span class="p">),</span> <span class="n">pad_value</span><span class="p">)</span>
     <span class="n">current_seq</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">prime_id</span>
     <span class="n">predicted</span> <span class="o">=</span> <span class="p">[</span><span class="n">int_to_vocab</span><span class="p">[</span><span class="n">prime_id</span><span class="p">]]</span>
-    
+
     <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">predict_len</span><span class="p">):</span>
         <span class="k">if</span> <span class="n">train_on_gpu</span><span class="p">:</span>
             <span class="n">current_seq</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">LongTensor</span><span class="p">(</span><span class="n">current_seq</span><span class="p">)</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">current_seq</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">LongTensor</span><span class="p">(</span><span class="n">current_seq</span><span class="p">)</span>
-        
+
         <span class="c1"># initialize the hidden state</span>
         <span class="n">hidden</span> <span class="o">=</span> <span class="n">rnn</span><span class="o">.</span><span class="n">init_hidden</span><span class="p">(</span><span class="n">current_seq</span><span class="o">.</span><span class="n">size</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-        
+
         <span class="c1"># get the output of the rnn</span>
         <span class="n">output</span><span class="p">,</span> <span class="n">_</span> <span class="o">=</span> <span class="n">rnn</span><span class="p">(</span><span class="n">current_seq</span><span class="p">,</span> <span class="n">hidden</span><span class="p">)</span>
-        
+
         <span class="c1"># get the next word probabilities</span>
         <span class="n">p</span> <span class="o">=</span> <span class="n">F</span><span class="o">.</span><span class="n">softmax</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">data</span>
         <span class="k">if</span><span class="p">(</span><span class="n">train_on_gpu</span><span class="p">):</span>
             <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">cpu</span><span class="p">()</span> <span class="c1"># move to cpu</span>
-         
+
         <span class="c1"># use top_k sampling to get the index of the next word</span>
         <span class="n">top_k</span> <span class="o">=</span> <span class="mi">5</span>
         <span class="n">p</span><span class="p">,</span> <span class="n">top_i</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">topk</span><span class="p">(</span><span class="n">top_k</span><span class="p">)</span>
         <span class="n">top_i</span> <span class="o">=</span> <span class="n">top_i</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
-        
+
         <span class="c1"># select the likely next word index with some element of randomness</span>
         <span class="n">p</span> <span class="o">=</span> <span class="n">p</span><span class="o">.</span><span class="n">numpy</span><span class="p">()</span><span class="o">.</span><span class="n">squeeze</span><span class="p">()</span>
         <span class="n">word_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">top_i</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="o">/</span><span class="n">p</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
-        
+
         <span class="c1"># retrieve that word from the dictionary</span>
         <span class="n">word</span> <span class="o">=</span> <span class="n">int_to_vocab</span><span class="p">[</span><span class="n">word_i</span><span class="p">]</span>
-        <span class="n">predicted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>     
-        
+        <span class="n">predicted</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+
         <span class="c1"># the generated word becomes the next &quot;current sequence&quot; and the cycle can continue</span>
         <span class="n">current_seq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">roll</span><span class="p">(</span><span class="n">current_seq</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
         <span class="n">current_seq</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">word_i</span>
-    
+
     <span class="n">gen_sentences</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">predicted</span><span class="p">)</span>
-    
+
     <span class="c1"># Replace punctuation tokens</span>
     <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">token</span> <span class="ow">in</span> <span class="n">token_dict</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
         <span class="n">ending</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span> <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;&quot;&#39;</span><span class="p">]</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span>
         <span class="n">gen_sentences</span> <span class="o">=</span> <span class="n">gen_sentences</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">token</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">key</span><span class="p">)</span>
     <span class="n">gen_sentences</span> <span class="o">=</span> <span class="n">gen_sentences</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1"> &#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="n">gen_sentences</span> <span class="o">=</span> <span class="n">gen_sentences</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;( &#39;</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">)</span>
-    
+
     <span class="c1"># return all the sentences</span>
     <span class="k">return</span> <span class="n">gen_sentences</span>
 </pre></div>
@@ -15611,7 +15611,6 @@ morty:
 <p>kramer:(laughing) you know...(to jerry) you don't know.</p>
 </blockquote>
 <p>You can see that there are multiple characters that say (somewhat) complete sentences, but it doesn't have to be perfect! It takes quite a while to get good results, and often, you'll have to use a smaller vocabulary (and discard uncommon words), or get more data.  The Seinfeld dataset is about 3.4 MB, which is big enough for our purposes; for script generation you'll want more than 1 MB of text, generally.</p>
-<h1 id="Submitting-This-Project">Submitting This Project<a class="anchor-link" href="#Submitting-This-Project">&#182;</a></h1><p>When submitting this project, make sure to run all the cells before saving the notebook. Save the notebook file as "dlnd_tv_script_generation.ipynb" and save another copy as an HTML file by clicking "File" -&gt; "Download as.."-&gt;"html". Include the "helper.py" and "problem_unittests.py" files in your submission. Once you download these files, compress them into one zip file for submission.</p>
 
 </div>
 </div>
@@ -15621,7 +15620,7 @@ morty:
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span>
 </pre></div>
 
     </div>
@@ -15633,7 +15632,7 @@ morty:
   </div>
 </body>
 
- 
+
 
 
 </html>
