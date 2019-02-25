@@ -67,6 +67,13 @@ These four variants behave differently for packet loss, the project show the beh
 
 <https://github.com/vsikarwar/tcp-simulation/blob/master/README.md>
 
+## Chat Bot
+
+Implementation of chat bot using Microsoft's bot framework and LUIS.
+LUIS is the nlp engine and AEM is used as a content management system.
+
+<https://github.com/vsikarwar/chat-bot>
+
 ## Tutorial to use Pandas
 <https://github.com/vsikarwar/pandas-introduction/blob/master/Pandas.ipynb>
 
